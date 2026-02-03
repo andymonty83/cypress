@@ -1,5 +1,6 @@
 // Funciones en Cypress 
 // cy.root()
+// update tests
 
 describe('Tests para usar cy.root()', () => {
     beforeEach(() => {
