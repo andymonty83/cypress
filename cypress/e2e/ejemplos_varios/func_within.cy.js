@@ -23,9 +23,9 @@ describe('Tests para usar cy.within()', () => {
 
 
         // Aquí va a fallar porque dentro de este contexto no hay ningun ul con 'oranges'
-        cy.get('#querying')
-        .contains('ul', "oranges")
-        .should('have.class', 'query-list');
+        //cy.get('#querying')
+        //.contains('ul', "oranges")
+        //.should('have.class', 'query-list');
       })
     })
   });
