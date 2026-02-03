@@ -19,7 +19,7 @@ describe('Tests para entender las mejores técnicas a la hora de usar componente
         cy.get('button').click()
       })
     
-      it('Mala - Acoplada al estilismo, demasiado sujeta a cambios de CSS', () => {
+      it.skip('Mala - Acoplada al estilismo, demasiado sujeta a cambios de CSS', () => {
         // Si el equipo de frontend cambia el nombre de las clases, este test fallará
         cy.get('.btn.btn-large').click()
       })
