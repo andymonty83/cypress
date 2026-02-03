@@ -1,5 +1,6 @@
 // Funciones en Cypress 
 // cy.get() 
+// commemnts free
 
 describe('Tests para usar cy.get()', () => {
     beforeEach(() => {
