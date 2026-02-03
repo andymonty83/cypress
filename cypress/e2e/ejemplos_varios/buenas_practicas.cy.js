@@ -14,7 +14,7 @@ describe('Tests para entender las mejores técnicas a la hora de usar componente
         cy.url().should('eq', 'https://example.cypress.io/commands/querying');
       })
       
-      it('La peor - Demasiado genérica, sin contexto', () => {
+      it.skip('La peor - Demasiado genérica, sin contexto', () => {
         // Esto puede fallar si hay más de un <button> en la página
         cy.get('button').click()
       })

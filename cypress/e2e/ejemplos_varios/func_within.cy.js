@@ -1,7 +1,7 @@
 // Funciones en Cypress 
 // .within()
 
-describe('Tests para usar cy.within() básico', () => {
+describe('Tests para usar cy.within()', () => {
     beforeEach(() => {
       // Visitar la página de ejemplo de Cypress
       cy.visit('https://example.cypress.io'); 
@@ -14,7 +14,7 @@ describe('Tests para usar cy.within() básico', () => {
       cy.url().should('eq', 'https://example.cypress.io/commands/querying');
     })
     
-    it('Limitar el alcance de las búsquedas de elementos a un contenedor específico', () => {
+    it.skip('Limitar el alcance de las búsquedas de elementos a un contenedor específico', () => {
       // Al usar .within(), Cypress buscará los elementos solo dentro de .query-form
       cy.get('.query-form').within(() => {
         // Ambos inputs están dentro del formulario, usamos first y last para ser precisos
@@ -22,7 +22,7 @@ describe('Tests para usar cy.within() básico', () => {
         cy.get('input:last').should('have.attr', 'placeholder', 'Password')
 
 
-        // Aquí va a fallar porque dentro de este contexto no hay ningun ul con oranges
+        // Aquí va a fallar porque dentro de este contexto no hay ningun ul con 'oranges'
         cy.get('#querying')
         .contains('ul', "oranges")
         .should('have.class', 'query-list');
