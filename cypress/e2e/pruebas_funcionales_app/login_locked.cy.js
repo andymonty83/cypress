@@ -10,7 +10,7 @@ describe('Pruebas de Login - Cuenta Bloqueada', () => {
     // Si la app usa ID, puedes cambiarlo por #user o similar.
     cy.get('#username').type('locked');
 
-    // 3. Ingresar la contraseña
+    // 3. Ingresa la contraseña
     cy.get('#password').type('locked');
 
     // 4. Hacer clic en el botón de ingresar
