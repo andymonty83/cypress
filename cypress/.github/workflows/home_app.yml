@@ -6,13 +6,13 @@ on:
       - main
     paths:
       - 'e2e/pruebas_funcionales_app/**' # Solo se activa si cambias algo aquí
-    workflow_dispatch: # <--- Esto activa el botón manual
+  workflow_dispatch: # <--- Esto activa el botón manual
   pull_request:
     branches:
       - main
     paths:
       - 'e2e/pruebas_funcionales_app/**' # Lo mismo para los PR
-    workflow_dispatch: # <--- Esto activa el botón manual
+  workflow_dispatch: # <--- Esto activa el botón manual
 
 jobs:
   cypress-run:
