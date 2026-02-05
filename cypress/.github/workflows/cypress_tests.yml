@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+    workflow_dispatch: # <--- Esto activa el botón manual
   pull_request:
     branches:
       - main
+    workflow_dispatch: # <--- Esto activa el botón manual
 
 jobs:
   cypress-run:
